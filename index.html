@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A PWA Calculator, to test PWA Apps.">
+    <meta name="theme-color" content="#7971EA"/>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator PWA</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="vertical-centered">
+            <div class="row">
+                <div id="result-display">
+                    <p id="result-text">
+                        0
+                    </p>
+                </div>
+            </div>
+            <div id="calculation-keys">
+                <div class="row">
+                    <div id="reset-button" class="key gray">
+                        <p class="key-text">
+                            c
+                        </p>
+                    </div>
+                    <div id="negate-button" class="key gray">
+                        <p class="key-text">
+                            +/-
+                        </p>
+                    </div>
+                    <div id="percent-button" class="key gray">
+                        <p class="key-text">
+                            %
+                        </p>
+                    </div>
+                    <div id="divide-button" class="key purple">
+                        <p class="key-text">
+                            /
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="seven-button" class="key">
+                        <p class="key-text">
+                            7
+                        </p>
+                    </div>
+                    <div id="eight-button" class="key">
+                        <p class="key-text">
+                            8
+                        </p>
+                    </div>
+                    <div id="nine-button" class="key">
+                        <p class="key-text">
+                            9
+                        </p>
+                    </div>
+                    <div id="multiply-button" class="key purple">
+                        <p class="key-text">
+                            x
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="four-button" class="key">
+                        <p class="key-text">
+                            4
+                        </p>
+                    </div>
+                    <div id="five-button" class="key">
+                        <p class="key-text">
+                            5
+                        </p>
+                    </div>
+                    <div id="six-button" class="key">
+                        <p class="key-text">
+                            6
+                        </p>
+                    </div>
+                    <div id="subtract-button" class="key purple">
+                        <p class="key-text">
+                            -
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="one-button" class="key">
+                        <p class="key-text">
+                            1
+                        </p>
+                    </div>
+                    <div id="two-button" class="key">
+                        <p class="key-text">
+                            2
+                        </p>
+                    </div>
+                    <div id="three-button" class="key">
+                        <p class="key-text">
+                            3
+                        </p>
+                    </div>
+                    <div id="add-button" class="key purple">
+                        <p class="key-text">
+                            +
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="zero-button" class="key large">
+                        <p class="key-text">
+                            0
+                        </p>
+                    </div>
+                    <div id="comma-button" class="key">
+                        <p class="key-text">
+                            ,
+                        </p>
+                    </div>
+                    <div id="get-result-button" class="key purple">
+                        <p class="key-text">
+                            =
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="calculation.js"></script>
+</body>
+
+</html>
