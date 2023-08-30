@@ -6,6 +6,25 @@ body {
     margin: 0;
 }
 
+button {
+    height: 48px;
+    width: fit-content;
+    padding: 12px;
+    background-color: #7971EA;
+    color: #EEEEEE;
+    font-weight: 600;
+    font-size: 14pt;
+    border-radius: 12px;
+    border: none;
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #EEEEEE;
+    color: #222831;
+}
+
 #container {
     width: 100vw;
     height: 100vh;

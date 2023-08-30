@@ -19,6 +19,8 @@ let zeroButton;
 let commaButton;
 let getResultButtontton;
 
+let notificationReminderButton;
+
 let currentDisplayedValue = '0';
 let firstNumberForCalculation = 0;
 let secondNumberForCalculation;
@@ -46,6 +48,7 @@ function initElements() {
     zeroButton = document.getElementById('zero-button');
     commaButton = document.getElementById('comma-button');
     getResultButton = document.getElementById('get-result-button');
+    notificationReminderButton = document.getElementById('notification-button');
 }
 
 function updateDisplayedResult() {
@@ -87,6 +90,18 @@ function setFirstNumberForCalculation(numberAsString) {
 
 function setOperator(oberatoreAsString) {
     currentOperator = oberatoreAsString;
+}
+
+function randomNotifictaion() {
+    const notifTitle = 'This is your random test notification';
+    const notifBody = 'I have nothing to say, just that I wanted to notify you.';
+    const notifImg = './images/icons/icon-512x512.png';
+    const options = {
+        body: notifBody,
+        icon: notifImg,
+    };
+    new Notification(notifTitle, options);
+    setTimeout(randomNotifictaion, 5000);
 }
 
 function setEventListener() {
@@ -207,6 +222,14 @@ function setEventListener() {
             updateDisplayedResult();
         }
     });
+
+    notificationReminderButton.addEventListener('click', () => {
+        Notification.requestPermission().then((result) => {
+            if(result === 'granted') {
+                randomNotifictaion();
+            }
+        })
+    })
 }
 
 function startApp() {
